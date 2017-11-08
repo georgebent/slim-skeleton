@@ -15,8 +15,6 @@ var gulp           = require('gulp'),
     rigger         = require('gulp-rigger'),
     rsync          = require('gulp-rsync');
 
-// Пользовательские скрипты проекта
-
 gulp.task('js', function() {
     return gulp.src([
         'resources/js/*.js'
