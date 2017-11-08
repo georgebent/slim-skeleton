@@ -1,0 +1,29 @@
+{
+  "name": "Portfolio",
+  "version": "2.0.1",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "George Bent",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.5.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-rsync": "0.0.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "vinyl-ftp": "^0.6.0"
+  }
+}

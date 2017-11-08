@@ -1,0 +1,279 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 30px;
+}
+
+.mb {
+	margin-bottom: 30px;
+}
+
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+a {
+	color: #1eda75;
+}
+
+a:hover {
+	color: #bbb;
+}
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #bbb;
+}
+
+.navbar-default {
+    background-color: rgba(0, 0, 0, 0.5);
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #1eda75;
+	background-color: transparent;
+	border-bottom: 2px solid #1eda75
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #1eda75;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #4ca25b;
+}
+
+.portfolio-in-works {
+	margin-top: 50px;
+}
+
+.gallery p {
+	margin: 10px 0;
+}
+
+.img-portfolio {
+	display: inline-block;
+	height: 150px;
+}
+
+.about-wrapper .info {
+	text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 10px 0 20px;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/2.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-position: center center;
+	min-height: 650px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1, #aboutwrap h1 {
+	color:#ffffff;
+	padding: 10px 0;
+	margin: 10px 0;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#headerwrap h4, #aboutwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#aboutwrap a {
+	font-weight: 600;
+	font-size: 50px;
+	color: #ffffff;
+    text-decoration: underline;
+}
+#aboutwrap a:hover {
+	color: #68d676;
+}
+
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+}
+
+#social i {
+	font-size: 40px;
+	color: #4a4a4a
+}
+
+#social i:hover {
+	color: #1abc9c
+}
+
+#footerwrap {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	background-color: #2f2f2f;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+}
+
+.footer-on-works {
+    position: absolute;		
+    width: 100%;
+    bottom: 0px;
+}
+
+#workwrap {	
+	background: url(../img/work.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#workwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#aboutwrap {	
+	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/2.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+/* Gallery */
+.gallery {
+	margin-top: 30px;
+}
+
+.gallery img:hover {
+	opacity: 0.4;
+}
+
+@media (min-width: 20px) and (max-width: 1024px) {
+	.footer-on-works {
+	    position: inherit;		
+	}
+}

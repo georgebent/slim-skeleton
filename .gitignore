@@ -1,0 +1,5 @@
+logs
+vendor
+.idea
+node_modules
+tmp

@@ -1,0 +1,28 @@
+//= partials/header.html
+
+
+<div id="aboutwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1>About</h1>
+            </div>
+        </div><! --/row -->
+    </div> <!-- /container -->
+</div><! --/aboutwrap -->
+
+<div class="container">
+    <div class="row centered mt mb">
+        <?php foreach($works as $work): ?>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+            <a href="<?php echo $work['slug']?>" target="_blank"><img src="<?php echo $work['image']?>" class="img-responsive img-portfolio" title="<?php echo $work['title']?>"></a>
+            <p><?php echo $work['description']?></p>
+        </div>
+
+        <?php endforeach; ?>
+
+    </div><! --/row -->
+</div><! --/container -->
+
+//= partials/footer.html
