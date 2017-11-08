@@ -8,7 +8,7 @@
 
 ## Installation
 
-After dowmload run:
+After download run:
 ```sh
 composer install
 npm install
