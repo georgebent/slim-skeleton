@@ -8,7 +8,7 @@
 
 ## Installation
 
-After download run:
+After [download](https://github.com/georgebent/slim-skeleton/archive/master.zip) run:
 ```sh
 composer install
 npm install
@@ -36,7 +36,7 @@ for adding frontend to project run:
 gulp build
 ```
 
-for run application:
+for start application run command in public folder:
 ```sh
 php -S localhost:3001
 ```
