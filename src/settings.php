@@ -9,7 +9,7 @@ return [
         'addContentLengthHeader' => false,
         
         // Renderer settings
-        'renderer' => [
+        'render' => [
             'template_path' => __DIR__ . '/../public/',
         ],
         
