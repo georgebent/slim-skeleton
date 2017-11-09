@@ -1,11 +1,14 @@
 <?php
+
 // DIC configuration
 $container = $app->getContainer();
-// view renderer
+
+// render view
 $container['renderer'] = function ($c) {
-    $settings = $c->get('settings')['renderer'];
+    $settings = $c->get('settings')['render'];
     return new Slim\Views\PhpRenderer($settings['template_path']);
 };
+
 // monolog
 $container['logger'] = function ($c) {
     $settings = $c->get('settings')['logger'];
@@ -14,6 +17,7 @@ $container['logger'] = function ($c) {
     $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
     return $logger;
 };
+
 // 404
 $container['notFoundHandler'] = function ($c) {
     return function ($request, $response) use ($c) {
