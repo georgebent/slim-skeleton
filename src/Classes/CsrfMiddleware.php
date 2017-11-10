@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yura
- * Date: 10.11.17
- * Time: 22:14
- */
 
 namespace App\Classes;
 
