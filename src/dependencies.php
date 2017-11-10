@@ -4,7 +4,7 @@
 $container = $app->getContainer();
 
 // render view
-$container['renderer'] = function ($c) {
+$container['render'] = function ($c) {
     $settings = $c->get('settings')['render'];
     return new Slim\Views\PhpRenderer($settings['template_path']);
 };
@@ -21,6 +21,6 @@ $container['logger'] = function ($c) {
 // 404
 $container['notFoundHandler'] = function ($c) {
     return function ($request, $response) use ($c) {
-        return $c['renderer']->render($response->withStatus(404), '404.html');
+        return $c['render']->render($response->withStatus(404), '404.html');
     };
 };
