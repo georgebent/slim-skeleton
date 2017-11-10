@@ -36,7 +36,7 @@ for adding frontend to project run:
 gulp build
 ```
 
-for start application run command in public folder:
+for start application run:
 ```sh
-php -S localhost:3001
+composer serve
 ```
