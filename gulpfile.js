@@ -79,7 +79,7 @@ gulp.task('html', function() {
     .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('build', ['html', 'sass', 'js'], function() {
+gulp.task('build', ['html', 'sass', 'js', 'imagemin', 'fonts'], function() {
 
     var buildFiles = gulp.src([
         'tmp/*.html',
