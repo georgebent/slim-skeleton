@@ -12,7 +12,10 @@ return [
         'render' => [
             'template_path' => __DIR__ . '/../public/',
         ],
-        
+        // Sqlite path
+        'db' => [
+            'sqlite' => 'sqlite:../database/data.sqlite',
+        ],
         // Monolog settings
         'logger' => [
             'name' => 'slim-app',

@@ -19,7 +19,6 @@ class Controller
     public function __construct($container)
     {
         $this->container = $container;
-        $this->dbDir = 'sqlite:../database/portfolio.sqlite';
     }
 
     /**
@@ -43,12 +42,12 @@ class Controller
      */
     public function about(Request $request, Response $response)
     {
-        $query =  "SELECT * FROM works;";
-        $results = $this->db()->query($query);
+        $works = $this->container['db']->query("SELECT * FROM works;");
         $response = $this->container['render']->render($response, "about.html", [
-            "route" => $request->getUri()->getPath(),
-            "works" => $results,
+            "works" => $works,
         ]);
+
+        return $response;
     }
 
     /**
@@ -58,19 +57,8 @@ class Controller
      */
     public function contacts(Request $request, Response $response)
     {
-        $response = $this->container['render']->render($response, "contacts.html", [
-            "route" => $request->getUri()->getPath(),
-        ]);
+        $response = $this->container['render']->render($response, "contacts.html");
 
         return $response;
-    }
-
-    /**
-     * @return \PDO
-     */
-    public function db()
-    {
-        $dbh = new \PDO($this->dbDir) or die("cannot open the database");
-        return $dbh;
     }
 }

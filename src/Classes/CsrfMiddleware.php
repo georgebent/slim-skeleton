@@ -2,7 +2,6 @@
 
 namespace App\Classes;
 
-
 class CsrfMiddleware
 {
     /**
