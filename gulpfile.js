@@ -32,8 +32,6 @@ gulp.task('browser-sync', function() {
             baseDir: 'tmp'
         },
         notify: true
-        // tunnel: true,
-        // tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
     });
 });
 
@@ -58,7 +56,6 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest('tmp/fonts'));
 });
 
-// gulp.task('watch', ['html', 'sass', 'js', 'imagemin', 'fonts'], function() {
 gulp.task('watch', function() {
     runSequence(
         ['html', 'sass', 'js', 'imagemin', 'fonts'],
