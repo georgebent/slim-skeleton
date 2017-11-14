@@ -18,6 +18,20 @@ $container['logger'] = function ($c) {
     return $logger;
 };
 
+// Sqlite DB
+$container['db'] = function ($c) {
+    $settings = $c->get('settings')['db'];
+    
+    if(!isset($settings['sqlite']) || !$settings['sqlite']) {
+        return false;
+    }
+
+    $path = $settings['sqlite'];
+    $db = new \PDO($path) or die("cannot open the database");
+    return $db;
+
+};
+
 // 404
 $container['notFoundHandler'] = function ($c) {
     return function ($request, $response) use ($c) {
