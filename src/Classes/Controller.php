@@ -34,31 +34,4 @@ class Controller
 
         return $response;
     }
-
-    /**
-     * @param Request $request
-     * @param Response $response
-     * @return Response
-     */
-    public function about(Request $request, Response $response)
-    {
-        $works = $this->container['db']->query("SELECT * FROM works;");
-        $response = $this->container['render']->render($response, "about.html", [
-            "works" => $works,
-        ]);
-
-        return $response;
-    }
-
-    /**
-     * @param Request $request
-     * @param Response $response
-     * @return Response
-     */
-    public function contacts(Request $request, Response $response)
-    {
-        $response = $this->container['render']->render($response, "contacts.html");
-
-        return $response;
-    }
 }
