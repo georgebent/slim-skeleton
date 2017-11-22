@@ -1,8 +1,9 @@
 <?php
+
 return [
     'settings' => [
         
-        // set to false in production
+        // Set to false in production
         'displayErrorDetails' => true,
         
          // Allow the web server to send the content-length header
@@ -12,10 +13,12 @@ return [
         'render' => [
             'template_path' => __DIR__ . '/../public/',
         ],
-        // Sqlite path
+
+        // SQLite path
         'db' => [
             'sqlite' => 'sqlite:../database/data.sqlite',
         ],
+
         // Monolog settings
         'logger' => [
             'name' => 'slim-app',

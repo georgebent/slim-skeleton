@@ -1,13 +1,22 @@
 {
   "name": "Slim-skeleton",
   "version": "2.0.1",
-  "description": "My slim application",
+  "description": "Slim starter kit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "George Bent",
-  "license": "ISC",
+  "author": {
+    "name": "George Ben",
+    "email": "gdevyur@gmail.com"
+  },
+  "contributors": [
+    {
+      "name" : "Vania Kucher",
+      "email" : "dev.kucher@gmail.com"
+    }
+  ],
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
@@ -20,11 +29,8 @@
     "gulp-notify": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-rigger": "^0.5.8",
-    "gulp-rsync": "0.0.8",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "run-sequence": "^2.2.0",
-    "vinyl-ftp": "^0.6.0"
+    "run-sequence": "^2.2.0"
   }
 }
