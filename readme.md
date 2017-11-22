@@ -47,7 +47,7 @@ for adding route, you must add it to route.php file. For example:
 $app->get('/', 'App\Classes\Controller:index');
 ```
 
-for using sqlite database, you must add db to database folder(or use current "data.sqlite"), entering settings in settings.php, and use. For example, add to function in Controller.php:
+for using sqlite database, you must add db to database folder(or use current "data.sqlite"), entering settings in settings.php and use. For example, add to function in Controller.php:
 ```php
 $this->container['db']->query("SELECT * FROM works;");
 ```
