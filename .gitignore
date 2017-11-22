@@ -4,5 +4,6 @@ vendor
 node_modules
 tmp
 public
+composer.lock
 !public/.htaccess
 !public/index.php

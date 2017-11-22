@@ -1,19 +1,15 @@
 var gulp           = require('gulp'),
-    gutil          = require('gulp-util' ),
     sass           = require('gulp-sass'),
     browserSync    = require('browser-sync'),
     concat         = require('gulp-concat'),
     uglify         = require('gulp-uglify'),
     cleanCSS       = require('gulp-clean-css'),
     rename         = require('gulp-rename'),
-    del            = require('del'),
     imagemin       = require('gulp-imagemin'),
     cache          = require('gulp-cache'),
     autoprefixer   = require('gulp-autoprefixer'),
-    ftp            = require('vinyl-ftp'),
     notify         = require("gulp-notify"),
     rigger         = require('gulp-rigger'),
-    rsync          = require('gulp-rsync'),
     runSequence    = require('run-sequence');
 
 gulp.task('js', function() {
@@ -27,10 +23,8 @@ gulp.task('js', function() {
 });
 
 gulp.task('browser-sync', function() {
-    browserSync({
-        server: {
-            baseDir: 'tmp'
-        },
+    browserSync.init({
+        proxy: "http://localhost:3003/",
         notify: true
     });
 });
@@ -61,10 +55,7 @@ gulp.task('watch', function() {
         ['html', 'sass', 'js', 'imagemin', 'fonts'],
         'browser-sync'
     );
-    gulp.watch('resources/sass/*.*', ['sass']);
-    gulp.watch(['resources/js/*.js'], ['js']);
-    gulp.watch(['resources/templates/**/*.html'], ['html']);
-    gulp.watch('tmp/*.html', browserSync.reload);
+    gulp.watch(['resources/**/*'], ['build'])
 });
 
 gulp.task('html', function() {
