@@ -2,9 +2,10 @@
 
 ## Requirements
 
-- php [7.0.13]
-- NodeJS [7.10.1]
-- NPM [4.2.0]
+- PHP >= 7.0.0
+- NodeJS >= 7.10.1
+- NPM >= 4.2.0
+- SQLite3 PHP Extension
 
 ## Installation
 
@@ -24,9 +25,12 @@ src/routes.php
 
 ## Usage
 
-All files for gulp in resources directory
+All files for frontend in resources directory
 
-If you have error with PDO/SQLite, install php-sqlite3 library
+for start application run:
+```sh
+composer serve
+```
 
 for creating frontend online use:
 ```sh
@@ -38,7 +42,12 @@ for adding frontend to project run:
 gulp build
 ```
 
-for start application run:
-```sh
-composer serve
+for adding route, you must add it to route.php file. For example:
+```php
+$app->get('/', 'App\Classes\Controller:index');
+```
+
+for using sqlite database, you must add db to database folder(or use current "data.sqlite"), entering settings in settings.php, and use. For example, add to function in Controller.php:
+```php
+$this->container['db']->query("SELECT * FROM works;");
 ```
