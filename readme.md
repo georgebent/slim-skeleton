@@ -26,6 +26,8 @@ src/routes.php
 
 All files for gulp in resources directory
 
+If you have error with PDO/SQLite, install php-sqlite3 library
+
 for creating frontend online use:
 ```sh
 gulp
