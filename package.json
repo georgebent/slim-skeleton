@@ -1,6 +1,6 @@
 {
   "name": "Slim-skeleton",
-  "version": "2.0.1",
+  "version": "1.0.0",
   "description": "Slim starter kit",
   "main": "index.js",
   "scripts": {
