@@ -27,19 +27,19 @@ src/routes.php
 
 All files for frontend in resources directory
 
-for start application run:
+for adding frontend to project run:
 ```sh
-composer serve
+npm run build
 ```
 
 for creating frontend online use:
 ```sh
-gulp
+npm run watch
 ```
 
-for adding frontend to project run:
+for start application run:
 ```sh
-gulp build
+composer serve
 ```
 
 for adding route, you must add it to route.php file. For example:
