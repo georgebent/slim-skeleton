@@ -1,4 +1,13 @@
 {
+    "name": "georgebent/slim-skeleton",
+    "description": "Slim skeleton",
+    "authors": [
+        {
+            "name": "George Bent",
+            "email": "gdevyur@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
     "require": {
         "slim/slim": "^3.1",
         "slim/php-view": "^2.0",
